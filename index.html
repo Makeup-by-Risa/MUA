@@ -112,14 +112,15 @@
     <section id="contact" class="contact-section">
         <h2>Book Your Session</h2>
         <p>Diskusikan konsep riasan impian Anda bersama kami.</p>
-       <form class="contact-form" action="https://formsubmit.co/larisapuan@gmail.com" method="POST">
+       <form class="contact-form" 
+               action="https://formsubmit.co/larisapuan@gmail.com" 
+               method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Pesan Baru dari Web Makeup">
                     <input type="hidden" name="_template" value="table"> 
-                    <onsubmit="alert('Terima kasih! Pesan Anda berhasil dikirim (Simulasi).'); return false;">
-            <input type="text" placeholder="Nama Lengkap" required>
-            <input type="email" placeholder="Email Anda" required>
-            <textarea placeholder="Detail Acara & Tanggal Booking" rows="5" required></textarea>
+            <input type="text" name="nama" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="pesan" placeholder="Detail Acara & Tanggal Booking" rows="5" required></textarea>
             <button type="submit" class="btn-submit">Kirim Pesan via Email</button>
         </form>
     </section>
